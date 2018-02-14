@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rm -rf ./dist/*",
     "build": "webpack",
-    "start": "npm run build && webpack-dev-server",
+    "serve": "webpack-dev-server --content-base dist/",
+    "start": "npm run clean && npm run build && npm run serve",
     "test": "karma start karma.config.js"
   },
   "keywords": [
