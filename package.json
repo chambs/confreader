@@ -1,7 +1,7 @@
 {
-  "name": "cl_common_cfg_reader",
+  "name": "common_cfg_reader",
   "version": "1.0.0",
-  "description": "Castlabs Common Configuration Reader App",
+  "description": "Common Configuration Reader App",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf ./dist/*",
@@ -10,9 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "castlabs",
-    "common",
-    "configuration"
+    "common configuration"
   ],
   "author": "Willian Carvalho",
   "license": "ISC",
