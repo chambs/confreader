@@ -9,7 +9,7 @@ export function Hello (str) {
 }
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <h1>Super basic React Example!</h1>,
   document.getElementById('root')
 );
 

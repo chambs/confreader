@@ -1,10 +1,14 @@
+// const ClosureCompilerPlugin = require('webpack-closure-compiler');
+
 module.exports = {
   context: __dirname + '/src',
   entry: './main.js',
   output: {
-    filename: './dist/bundle.js',
+    path: __dirname + '/dist',
+    filename: 'bundle.js',
     library: 'confreader',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    publicPath: '/'
   },
   module: {
     loaders: [
@@ -15,10 +19,22 @@ module.exports = {
         loader: 'file-loader',
         exclude: /node_modules/,
         options: {
-          outputPath: './dist/',
           name: '[path][name].[ext]'
         }
       }
     ]
   }
+  // plugins: [
+  //   new ClosureCompilerPlugin({
+  //     // Use the line below if you don't have java installed
+  //     // jsCompiler: true
+  //     compiler: {
+  //       // jar: 'path/to/your/custom/compiler.jar', //optional
+  //       language_in: 'ECMASCRIPT6',
+  //       language_out: 'ECMASCRIPT5',
+  //       compilation_level: 'SIMPLE'
+  //     },
+  //     concurrency: 3,
+  //   })
+  // ]
 };

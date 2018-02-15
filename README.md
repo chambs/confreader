@@ -19,4 +19,4 @@ Jasmine.
   This will:
 
     * Build sources from `/src`
-    * Start a web server under http://localhost:8080
+    * Start a web server under http://localhost:8080/test.html

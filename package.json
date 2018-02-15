@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf ./dist/*",
-    "build": "webpack",
-    "serve": "webpack-dev-server --content-base dist/",
-    "start": "npm run clean && npm run build && npm run serve",
+    "build": "npm run clean && webpack",
+    "serve": "webpack-dev-server",
+    "start": "npm run build && npm run serve",
     "test": "karma start karma.config.js"
   },
   "keywords": [
@@ -31,6 +31,7 @@
     "karma-jasmine": "^1.1.1",
     "karma-webpack": "^2.0.9",
     "webpack": "^3.11.0",
+    "webpack-closure-compiler": "^2.1.6",
     "webpack-dev-server": "^2.11.1"
   }
 }
